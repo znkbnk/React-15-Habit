@@ -49,18 +49,7 @@ this toggle.
 - When the button is clicked, it should toggle
 the showCompletedHabits state between true and false.
 
-Step 5: Move Completed Habits Automatically
-
-- In the HabitList component:
-- When a habit's goal days reach 0:
-- Check if the habit's goalDays is greater than 0.
-- If it is, decrement the goal days by 1.
-- Update the habit with the new goal days using
-the updateHabit function.
-- If the updated goalDays become 0, move the habit
-to the completedHabits array using setCompletedHabits.
-
-Step 6: Display Completed Habits and Days Taken
+Step 5: Display Completed Habits and Days Taken
 
 - Create a new component (e.g., CompletedHabits)
 to display completed habits.
@@ -73,7 +62,7 @@ completedHabits array.
 including the name and the number of days
 taken to achieve the goal.
 
-Step 7: Display a Message for Achieved Goals
+Step 6: Display a Message for Achieved Goals
 
 - In the HabitList component:
 - When rendering completed habits, check if the 
@@ -83,9 +72,6 @@ goalDays of the habit is 0.
 of days taken to achieve the goal.
 - This message should replace the goalDays display
 for completed habits.
-
-Step 8: Display "day" or "days" Based on the Number
-
 - In your rendering logic:
 - When displaying the message for achieved goals,
 check if the number of days taken is 1.
